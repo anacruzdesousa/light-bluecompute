@@ -1,4 +1,4 @@
-apiVersion: extensions/v1beta1
+apiVersion: v1
 kind: Deployment
 metadata:
   name: mysql-lightblue-deployment
@@ -44,7 +44,7 @@ spec:
      port: 3306
      nodePort: 30006
 ---
-apiVersion: extensions/v1beta1
+apiVersion: v1
 kind: Deployment
 metadata:
   name: customer-lightblue-deployment
@@ -90,7 +90,7 @@ spec:
      port: 8080
      nodePort: 30110
 ---
-apiVersion: extensions/v1beta1
+apiVersion: v1
 kind: Deployment
 metadata:
   name: catalog-lightblue-deployment
@@ -134,7 +134,7 @@ spec:
      port: 8081
      nodePort: 30111
 ---
-apiVersion: extensions/v1beta1
+apiVersion: v1
 kind: Deployment
 metadata:
   name: webapp-lightblue-deployment
