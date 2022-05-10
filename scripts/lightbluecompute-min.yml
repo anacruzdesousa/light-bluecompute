@@ -1,4 +1,4 @@
-apiVersion: v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: mysql-lightblue-deployment
@@ -44,7 +44,7 @@ spec:
      port: 3306
      nodePort: 30006
 ---
-apiVersion: v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: customer-lightblue-deployment
